@@ -10,16 +10,17 @@ import { useLocation } from 'react-router';
 
 const EditUser = (props) => {
     const params = useLocation();
-
+const myitem=params.state.item
     console.log(params.state.item)
+
          const [user, setUser] = useState({
-            name:"",
-            email:"",
-            degre:"",
-            role:"",
-            id:"",
+            name:myitem.name,
+            email:myitem.email,
+            degre:myitem.degre,
+            role:myitem.role,
+            id:myitem.id,
             image:"",
-            faculty:""
+            faculty:myitem.faculty
           
     
          });
@@ -29,14 +30,14 @@ const EditUser = (props) => {
          
         
         //  const navigate=useNavigate()
-         const handleSubmit=(e)=>{
+         const handleSubmite=(e)=>{
             e.preventDefault();
          
-            updateUser(user )
+            updateUser(user)
         }
          
       return (
-        <Form  onSubmit={handleSubmit} style={{display:"flex",flexDirection:"column",alignItems:"center",margin:"50px auto"}}>
+        <Form  onSubmit={handleSubmite} style={{display:"flex",flexDirection:"column",alignItems:"center",margin:"50px auto"}}>
            <Row><Col>
           <Form.Group className="mb-3" >
           <Form.Label>role</Form.Label>
@@ -93,7 +94,7 @@ const EditUser = (props) => {
     
          <Form.Group className="mb-3" controlId="formGroupPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="text" placeholder="Password" style={{border:"1px solid #00000040","width":"350px"}} 
+            <Form.Control type="text" placeholder="degre" style={{border:"1px solid #00000040","width":"350px"}} 
                     onChange={(e)=>setUser({...user, degre:e.target.value})}
             />
           </Form.Group>

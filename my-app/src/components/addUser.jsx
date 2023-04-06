@@ -92,8 +92,8 @@ const AddUser = () => {
          </Form.Group>
     
          <Form.Group className="mb-3" controlId="formGroupPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="text" placeholder="Password" style={{border:"1px solid #00000040","width":"350px"}} 
+            <Form.Label>degre</Form.Label>
+            <Form.Control type="text" placeholder="degre" style={{border:"1px solid #00000040","width":"350px"}} 
                     onChange={(e)=>setUser({...user, degre:e.target.value})}
             />
           </Form.Group>

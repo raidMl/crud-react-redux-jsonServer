@@ -2,10 +2,11 @@
   "users": [
     {
       "id": "ABC123",
-      "name": "mohamed ali",
+      "name": "rami",
       "degre": 1,
       "image": "",
-      "role": "student"
+      "role": "student",
+      "email": "rami22@gmail.com"
     },
     {
       "id": "DEF456",
@@ -21,6 +22,15 @@
       "image": "",
       "role": "employe",
       "faculty": "science"
+    },
+    {
+      "name": "raidreus.222@gmail.com",
+      "email": "raidreus.222@gmail.com",
+      "degre": "4",
+      "role": "",
+      "id": "51551",
+      "image": "",
+      "faculty": ""
     }
   ]
 }
